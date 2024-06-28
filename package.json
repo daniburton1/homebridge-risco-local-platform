@@ -1,9 +1,9 @@
 {
   "name": "homebridge-risco-local-platform",
   "displayName": "Homebridge Risco Local Platform",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "RiscoAlarm on Local Network Plugin Platform for Homebridge",
-  "homepage": "https://github.com/gawindx/homebridge-risco-local-platform#readme",
+  "homepage": "https://github.com/daniburton1/homebridge-risco-local-platform#readme",
   "license": "MIT",
   "author": "Gawindx",
   "publishConfig": {
@@ -12,10 +12,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gawindx/homebridge-risco-local-platform.git"
+    "url": "git+https://github.com/daniburton1/homebridge-risco-local-platform"
   },
   "bugs": {
-    "url": "https://github.com/gawindx/homebridge-risco-local-platform/issues"
+    "url": "https://github.com/daniburton1/homebridge-risco-local-platform"
   },
   "main": "app.js",
   "engines": {

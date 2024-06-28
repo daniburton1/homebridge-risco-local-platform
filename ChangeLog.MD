@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+
+## 0.1.4 (2024-06-28)
+* Added refresh Timer as a parameter
+
+
 ## 0.1.3 (2021-14-10)
 * Fix Error on launch with Custom Device (related to issue #2)
 * Update dependencie version for 'risco-lan-bridge'
