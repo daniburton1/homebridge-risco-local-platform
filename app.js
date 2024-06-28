@@ -79,6 +79,8 @@ class RiscoLanPlatform {
         this.Config = config;
         this.api = api;
 
+        this.timer = ((this.Config['RefreshTimer'] !== undefined) ? this.Config['RefreshTimer'] : this.timer);
+
         this.PanelOptions = {
             Panel_IP: ((this.Config['Panel_IP'] !== undefined) ? this.Config['Panel_IP'] : undefined),
             Panel_Port: ((this.Config['Panel_Port'] !== undefined) ? this.Config['Panel_Port'] : undefined),
@@ -139,7 +141,7 @@ class RiscoLanPlatform {
 
         api.on('didFinishLaunching', async () => {
             do {
-                await new Promise(r => setTimeout(r, 5000)); 
+                await new Promise(r => setTimeout(r, this.timer)); 
             } while (!this.PanelReady);
             this.log.info('Accessories Init Phase Started');
             const NotUSeDetectorType = ['0', '11', '13', '16', '17', '19', '21', '22', '23', '33', '34', '35'];
@@ -202,7 +204,7 @@ class RiscoLanPlatform {
             try {
                 if (Object.keys(this.DiscoveredAccessories).length != 0) {
                     if (this.hasCachedAccessory) {
-                        await new Promise(r => setTimeout(r, 5000));
+                        await new Promise(r => setTimeout(r, this.timer));
                     }
                     for (var DiscoveredAcc in this.Devices) {
                         if ( this.Devices[DiscoveredAcc].context !== undefined ) {

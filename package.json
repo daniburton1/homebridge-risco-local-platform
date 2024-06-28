@@ -37,5 +37,8 @@
   ],
   "dependencies": {
     "risco-lan-bridge": "^0.10.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.5.0"
   }
 }

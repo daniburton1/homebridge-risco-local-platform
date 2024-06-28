@@ -10,6 +10,7 @@
             "OccupancyPreventArming": true|false,
             "SystemMode": true|false,
             "AddPanel2FirstPart": true|false,
+            "RefreshTimer":  10000,
             "Partition": "none|all|0,1,..",
             "Outputs": "all|none|0,1,2,....",
             "Detectors": "all|none|0,1,2,....",
