@@ -79,13 +79,14 @@ class RiscoLanPlatform {
         this.Config = config;
         this.api = api;
 
-        this.timer = ((this.Config['RefreshTimer'] !== undefined) ? this.Config['RefreshTimer'] : this.timer);
+        this.timer = ((this.Config['RefreshTimer'] !== undefined) ? this.Config['RefreshTimer'] : 15000);
 
         this.PanelOptions = {
             Panel_IP: ((this.Config['Panel_IP'] !== undefined) ? this.Config['Panel_IP'] : undefined),
             Panel_Port: ((this.Config['Panel_Port'] !== undefined) ? this.Config['Panel_Port'] : undefined),
             Panel_Password: ((this.Config['Panel_Password'] !== undefined) ? this.Config['Panel_Password'] : 5678),
             Panel_Key: ((this.Config['Panel_Key'] !== undefined) ? this.Config['Panel_Key'] : 1),
+            Timer: ((this.Config['RefreshTimer'] !== undefined) ? this.Config['RefreshTimer'] : 10000),
             log: this.log
         };
         this.Panel_Model = ((this.Config['Panel_Model'] !== undefined) ? this.Config['Panel_Model'] : undefined);
